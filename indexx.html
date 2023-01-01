@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    
+    
+    <title>Resume Generator</title>
+</head>
+<body>
+    
+
+    <form onsubmit="callValue()" action="http://127.0.0.1:8081/process_get" method="GET">
+
+        <div class="container">
+            <div class="left_side">
+                <div class="profileText">
+                    <h2 class="name">Name</h2>
+       
+        <input type="text" name="Name" value="John Doe" class="form-control"  aria-label="First" id="uname ">
+        
+        <h2 class="name">Designation</h2>
+        
+        <input type="text" id="udesignation" value="Business Development Manager" name="Designation" class="form-control" placeholder="First " aria-label="First ">
+        
+       
+        <h2 class="name">Description</h2>
+        <textarea id="udescription" class="form-control" id="exampleFormControlTextarea1" rows="3">Professional Business Developer with more than four years of experince in the business development process. Involved in product testing, management, and development of new business opportunitites.</textarea>
+                </div>
+                <div class="workExp">
+                    <h2 class="namen">Work Experience</h2>
+        
+        
+                    
+            
+            <div class="mb-3">
+            <input type="text" name="Designation-1" value="Business Development Manager" class="form-control" id="formGroupExampleInput" placeholder="Designation-1">
+          </div>
+          <div class="mb-3">
+        <input type="text" name="Organization-1" value="AirState Solutions" class="form-control" id="formGroupExampleInput" placeholder="Organization">
+        </div>
+        <div class="mb-3">
+            <input type="month" name="Start-1" min="1950-01" value="2014-04" class="form-control" id="formGroupExampleInput" placeholder="start">
+        </div>
+        <div class="mb-3">
+            <input type="month" name="End-1" min="1950-01" value="2017-06" class="form-control" id="formGroupExampleInput" placeholder="end">
+        </div>
+        <div class="mb-3">
+            <input  type="location" name="Location-1" value="New York, USA" class="form-control" id="formGroupExampleInput" placeholder="end">
+        </div>
+        
+        
+        
+        <ul>Successfully managed $2 - $3 million budget projects and succcessfully achieved the projects scheduled goals.</ul>
+        <ul>Developed and implmented new marketing and sales plans and defined strategy for the next 5 years.</ul>
+        <ul>Reviewed constantly the customer feedback and then suggested ways to improve the processes and customer service levels which increased the satisfaction rate from 81% to 95%.</ul>
+        <ul>Ensured that new clients will grow into a loyal customer base in a specialist niche market by implementing a new loyalty program.</ul>
+
+
+        
+        <div class="mb-3">
+            <input type="text" name="Designation-2" value="Business Development Assistant" class="form-control" id="formGroupExampleInput" placeholder="Designation-1">
+          </div>
+          <div class="mb-3">
+        <input type="text" name="Organization-2" value="AirState Solutions" class="form-control" id="formGroupExampleInput" placeholder="Organization">
+        </div>
+        <div class="mb-3">
+            <input type="month" name="Start-1" min="1950-01" value="2014-04" class="form-control" id="formGroupExampleInput" placeholder="start">
+        </div>
+        <div class="mb-3">
+            <input type="month" name="End-1" min="1950-01" value="2017-06" class="form-control" id="formGroupExampleInput" placeholder="end">
+        </div>
+        <div class="mb-3">
+            <input  type="location" name="Location-1" value="Chicago, USA" class="form-control" id="formGroupExampleInput" placeholder="end">
+        </div>
+        <ul>Increased the customer satisfaction rate by 25% by improving the customer service.</ul>
+        <ul>Planned, supervised and coordinated daily activity of 3 junior business analysts.</ul>
+        <ul>Improved the communication with the Marketing department to better understand the competitive position.</ul>
+        <ul>Directed the creation and implementation of a Business Continuity Plan, and the management of audit programs.</ul>
+                </div>
+
+<div class="education">
+    <h2 class="namen">Education</h2>
+        
+    
+    <div class="mb-3">
+        <input type="text" name="Degree" value="MSc in Economics and Business Administration"class="form-control" id="formGroupExampleInput2" placeholder="Degree">
+      </div>
+    
+    <div class="mb-3">
+        <input type="text" name="University" value="The University of Chicago"class="form-control" id="formGroupExampleInput2" placeholder="University">
+      </div>
+    
+    <div class="mb-3">
+        <input type="month" name="Start" min="1950-01" value="2008-09" class="form-control" id="formGroupExampleInput" placeholder="start">
+    </div>
+    
+    <div class="mb-3">
+        <input type="month" name="End" min="1950-01" value="2010-06" class="form-control" id="formGroupExampleInput" placeholder="end">
+    </div>
+</div>
+
+<div class="languages">
+    <h2 class="namen">Languages</h2>
+        
+    
+        <input type="text" id="Language-1" name="Language-1" value="English" class="form-control" placeholder="Language-1" aria-label="State">
+        <input type="range" id="Language-1" name="Language-2" min="0" max="5">
+        
+        <br>
+        
+        
+        <input type="text"  id="Language-2" name="Language-2" value="Spanish" class="form-control" placeholder="Language-1" aria-label="State">
+        <input type="range" id="Language-2" name="Language-2" min="0" max="5">
+       
+        <br>
+        
+       
+        <input type="text"  id="Language-3" name="Language-3" value="French" class="form-control" placeholder="Language-1" aria-label="State">
+        <input type="range" id="Language-3" name="Language-2" min="0" max="5">
+        <br>
+</div>
+
+            </div>
+            <div class="right_side">
+                <div id="contact"class="contactInfo">
+                
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa-regular fa-mobile"></i></span>
+                        
+                            <input type="phone" id="ph" name="Phone" value="202-555-0166" class="form-control" placeholder="First " aria-label="First ">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                           
+                            <input type="enamel" id="email" name="Enamel" value="john.doe@gnamel.com" class="form-control" placeholder="First " aria-label="First ">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                            
+                            <input type="text" name="Location" id="location" value="New York, USA" class="form-control" placeholder="First " aria-label="First ">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                             <input type="text" name="linkedin-url" id="linkedIn"value="linkedin.com/in/john.doe" class="form-control" placeholder="First " aria-label="First ">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa-brands fa-skype"></i></span>
+                            <input type="text" name="skype-url" id="skype" value="john.doe" class="form-control" placeholder="First " aria-label="First ">
+                        </li>
+                    </ul>
+        
+       
+       
+                </div>
+            
+            <div class="skills">
+                <h2 class="namen" class="title2">SKILLS</h2>
+                <div class="box">
+                    
+                    <label for="vol"><h4>SEO</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+                <div class="box">
+                    
+                    <label for="vol"> <h4>Public Speaking</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+               
+                <div class="box">
+                    <label for="vol"><h4>Negotiation</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+               
+                <div class="box"> 
+                    <label for="vol"><h4>Teamwork</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+                
+                <div class="box">
+                    <label for="vol"><h4>Decision Making</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+               
+                <div class="box">
+                    <label for="vol"><h4>Research Strategy</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+               
+                <div class="box">
+                    <label for="vol"><h4>Enamel Marketing</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+               
+                <div class="box">
+                    <label for="vol"><h4>Google Analytics</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+                <div class="box">
+                   
+                    <label for="vol"><h4>Sales & Marketing</h4></label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+                </div>
+
+                
+                <div class="organizations">
+                    <h2 class="namen">Organizations</h2>
+        
+                    
+                    <div class="mb-3">
+        <input type="text" name="Organisation-1" value="American Management Association" class="form-control" id="formGroupExampleInput2" placeholder="Organisation-1">
+      </div>
+                    <br>
+                    
+                    <div class="input-group">
+                        
+                        <input type="month" name="from-year-2" value="2015-01" aria-label="First " class="form-control">
+                        <input type="month" name="to-year-2" value="2015-01" aria-label="Last " class="form-control">
+                      </div>
+                    <br>
+                    
+                
+                    <div class="mb-3">
+                        <input type="text" name="Organisation-2" value="Association of Private Enterprise Education" class="form-control" id="formGroupExampleInput2" placeholder="Organisation-2">
+                      </div>
+                    <br>
+                
+                    <div class="input-group">
+                        
+                        <input type="month" name="from-year-2" value="2014-01" aria-label="First " class="form-control">
+                        <input type="month" name="to-year-2" value="2014-01" aria-label="Last " class="form-control">
+                      </div>
+                    <br>
+                    
+                    
+                    <div class="mb-3">
+                        <input type="text" name="Organisation-3" value="eBusiness Association(eBA)" class="form-control" id="formGroupExampleInput2" placeholder="Organisation-3">
+                      </div>
+                    <br>
+                    
+                    <div class="input-group">
+                        
+                        <input type="month" name="from-year-2" value="2013-01" aria-label="First " class="form-control">
+                        <input type="month" name="to-year-2" value="2013-01" aria-label="Last " class="form-control">
+                      </div>
+                    <br>
+                </div>
+
+                <div class="honors">
+                    <h2 class="namen">Honours and Awards</h2>
+       
+        <div class="input-group">
+        
+            <input type="text" name="Honour-1" value="Jury Member, Venture Cup Entreprenuership Competition (2016)" placeholder="Honour-1"  aria-label="First " class="form-control">
+            <input type="text" name="Award-1" value="Venture Cup, USA" placeholder="award-1"  aria-label="Last " class="form-control">
+          </div>
+        <br>
+        
+        
+        <div class="input-group">
+            
+            <input type="text" name="Honour-2"  value="Sales Individual & Business Development Award (2015)" placeholder="Honour-2"  aria-label="First " class="form-control">
+            <input type="text"name="Award-2" value="AirState Business Awards" placeholder="award-2"  aria-label="Last " class="form-control">
+          </div>
+        <br>
+        
+       
+        <div class="input-group">
+        
+
+            <input type="text" name="Honour-3" value="Excellence in Customer Parterning Awards" placeholder="Honour-1"  aria-label="First " class="form-control">
+            <input type="text" name="Award-3"  value="IES - Institute of Excellence in Sales" placeholder="award-1"  aria-label="Last " class="form-control">
+          </div>
+        <br>
+                </div>
+
+                <div class="courses">
+                    <h2 class="namen">Conferences & Courses</h2>
+    
+                   
+                    <div class="input-group">
+                        
+                        <input type="text" name="Course-1" value="Leading People and Teams- Specialisation"placeholder="course-1"  aria-label="First " class="form-control">
+                        <input type="text" name="Subtitle-1" value="Online course on Coursera.org" placeholder="Subtitle-1"  aria-label="Last " class="form-control">
+                      </div>
+                    <br>
+                
+                    
+                    <div class="input-group">
+                        
+                        <input type="text"  name="Course-2" value="eMetrics Summit (09/2016)" placeholder="Course-2"  aria-label="First " class="form-control">
+                        <input type="text" name="Subtitle-2" value="Rising Media, Inc. and eMetrics Summit" placeholder="Subtitle-2"  aria-label="Last " class="form-control">
+                      </div>
+                    <br>
+                
+                    
+                    <div class="input-group">
+                    
+                        <input type="text"  name="Course-3" value="Project Management Principles and Practices (01/2015 - 09/2015)" placeholder="Course-3"  aria-label="First " class="form-control">
+                    
+                        <input type="text" name="Subtitle-3" value="Online course on Coursera.org" placeholder="Subtitle-3"  aria-label="Last " class="form-control">
+                      </div>
+                     
+                </div>
+            </div>
+                
+            </div>
+            <br>
+            <div class="submit">
+              <input class="btn btn-primary" type="submit" value="Submit">
+              <input class="btn btn-primary" type="reset" value="Reset">
+             
+          </div>
+          <br>
+            
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </form>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    </body>
+    </html>
